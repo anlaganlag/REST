@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List_Books</title>
+</head>
+<body>
+
+    <h1> All Books:</h1>
+    {% for book in object_list %}
+        <ul>
+            <li>Title: {{ book.title.title }}</li>
+            <li>Subtitle: {{ book.subtitle.title }}</li>
+            <li>Author: {{ book.author.title }}</li>
+        </ul>
+    {% endfor %}
+
+</body>
+</html>
